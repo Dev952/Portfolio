@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Trivedi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="img/Mbit_IT_Trivedidevkandarpkumar.pdf" download class="resume-btn">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <img src="Profile.png" alt="Dev Trivedi">
+        <h2>Hi, I'm Dev Trivedi</h2>
+        <p>Aspiring Web Developer | Passionate about Tech</p>
+    </header>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Athletic Avenue</h3>
+            <p>Developed the backend using Django, implementing features such as makemigrations, migrate, staff permissions, and superuser creation. Customized the UI with Django's inbuilt packages. Managed customer data storage and facilitated sports item purchase.</p>
+            <a href="https://github.com/Dev952/Athletic_Avenue">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Audio Spleeter</h3>
+            <p>AudioSpleeter utilizes a deep learning model pre-trained on a large dataset of music to perform source separation. The model is capable of identifying and isolating different instruments and vocal tracks from an audio mix.</p>
+            <a href="https://github.com/Dev952/Audio_Spleeter">View Project</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Name: Dev Trivedi</p>
+        <p>Phone: 9998618039</p>
+        <p>Email: devtrivedi13@gmail.com</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100004758645181">Facebook</a>
+            <a href="https://www.instagram.com/dev952">Instagram</a>
+            <a href="https://x.com/BEYONDI43675586">Twitter</a>
+            <a href="https://www.linkedin.com/in/dev-trivedi-a8b877250">LinkedIn</a>
+            <a href="https://beyondinfinite9502.page.link/BeyondInfinite">Beyond Infinite</a>
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
