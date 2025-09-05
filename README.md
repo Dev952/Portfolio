@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a web developer.
 
 ## 🚀 Live Demo
-🔗 beyondinfinite.netlify.app
+🔗 https://devvsportfolio.netlify.app/
 
 ## 📌 Features
 - 🖥️ **Responsive Design** – Works on all devices
