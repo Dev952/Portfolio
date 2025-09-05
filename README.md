@@ -3,7 +3,12 @@
 Welcome to my personal portfolio website!  
 This portfolio showcases my skills, projects, experience, and achievements as a **Software Engineer**.
 
+<<<<<<< HEAD
 🔗 **Live Website**: [devvsportfolio.netlify.app](https://devvsportfolio.netlify.app)
+=======
+## 🚀 Live Demo
+🔗 https://devvsportfolio.netlify.app/
+>>>>>>> 8b009a729dad7b89b50dd234031392b61f07823a
 
 ---
 
