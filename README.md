@@ -33,11 +33,6 @@ I am a **Software Engineer passionate about MERN stack development**.
 
 ---
 
-## 📸 Preview
-![Portfolio Screenshot](./Profile.png)
-
----
-
 ## 📬 Contact
 - 📧 Email: [devtrivedi13@gmail.com](mailto:devtrivedi13@gmail.com)  
 - 🔗 LinkedIn: [linkedin.com/in/dev-trivedi-a8b877250](https://www.linkedin.com/in/dev-trivedi-a8b877250)  
