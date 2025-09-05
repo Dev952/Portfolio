@@ -1,67 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Trivedi - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class="nav-container">
-            <h1>Portfolio</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="img/Mbit_IT_Trivedidevkandarpkumar.pdf" download class="resume-btn">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <header>
-        <img src="Profile.png" alt="Dev Trivedi">
-        <h2>Hi, I'm Dev Trivedi</h2>
-        <p>Aspiring Web Developer | Passionate about Tech</p>
-    </header>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Athletic Avenue</h3>
-            <p>Developed the backend using Django, implementing features such as makemigrations, migrate, staff permissions, and superuser creation. Customized the UI with Django's inbuilt packages. Managed customer data storage and facilitated sports item purchase.</p>
-            <a href="https://github.com/Dev952/Athletic_Avenue">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Audio Spleeter</h3>
-            <p>AudioSpleeter utilizes a deep learning model pre-trained on a large dataset of music to perform source separation. The model is capable of identifying and isolating different instruments and vocal tracks from an audio mix.</p>
-            <a href="https://github.com/Dev952/Audio_Spleeter">View Project</a>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Name: Dev Trivedi</p>
-        <p>Phone: 9998618039</p>
-        <p>Email: devtrivedi13@gmail.com</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100004758645181">Facebook</a>
-            <a href="https://www.instagram.com/dev952">Instagram</a>
-            <a href="https://x.com/BEYONDI43675586">Twitter</a>
-            <a href="https://www.linkedin.com/in/dev-trivedi-a8b877250">LinkedIn</a>
-            <a href="https://beyondinfinite9502.page.link/BeyondInfinite">Beyond Infinite</a>
-        </div>
-    </section>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navLinks = document.querySelector(".nav-links");
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator"></div>
 
-            menuToggle.addEventListener("click", function () {
-                navLinks.classList.toggle("active");
-            });
-        });
-    </script>
-</body>
+    <!-- Floating Elements -->
+    <div class="floating-elements"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <h1>Portfolio</h1>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="img/Dev Trivedi95.pdf" download class="resume-btn"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="about">
+      <div class="profile-container">
+        <img src="Profile.png" alt="Dev Trivedi" class="profile-image" />
+      </div>
+      <h1 class="hero-title">Hi, I'm Dev Trivedi</h1>
+      <p class="hero-subtitle">
+        Full Stack Developer | MERN Enthusiast | AI & ML Python Developer
+      </p>
+      <p class="hero-description">
+        Software Engineer passionate about MERN stack development. <br />
+        Skilled in building scalable, data-driven web applications. <br />
+        Bringing expertise in full-stack, problem-solving, and AI integration.
+      </p>
+    </header>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="card">
+        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem">
+          Pardy Panda Studios - Web Intern
+        </h3>
+        <p style="color: var(--text-secondary)">
+          <em>Vadodara, India | 07/2025 - Current</em>
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem">
+          INVINCIBLE NGO - Instructor
+        </h3>
+        <p style="color: var(--text-secondary)">
+          <em>Ahmedabad, India | 02/2023 - Current</em>
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem">
+          ISRO SAC - Research Intern
+        </h3>
+        <p style="color: var(--text-secondary)">
+          <em>Ahmedabad, India | 01/2025 - 04/2025</em>
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem">
+          INFOLABZ IT SERVICES PVT.LTD - Intern
+        </h3>
+        <p style="color: var(--text-secondary)">
+          <em>Ahmedabad, India | 06/2021 - 04/2022</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="project-card">
+        <button class="project-header">
+          <h3>IOT Base Vehicle Security System</h3>
+          <span class="expand-icon">▼</span>
+        </button>
+        <div class="project-content">
+          <ul>
+            <li>
+              Developed mobile applications using <strong>Flutter</strong>.
+            </li>
+            <li>
+              Integrated APIs and managed dependencies with
+              <strong>Gradle</strong>.
+            </li>
+            <li>
+              Designed and implemented IoT projects using
+              <strong>sensors, breadboards, and Arduino UNO</strong>.
+            </li>
+            <li>
+              Utilized <strong>000webhost</strong> for web hosting and database
+              management.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <button class="project-header">
+          <h3>Athletic Avenue</h3>
+          <span class="expand-icon">▼</span>
+        </button>
+        <div class="project-content">
+          <ul>
+            <li>
+              Developed backend using <strong>Django</strong>, implementing
+              migrations, staff permissions, and superuser creation.
+            </li>
+            <li>Customized UI with Django's inbuilt packages.</li>
+            <li>
+              Managed <strong>customer data storage</strong> and facilitated
+              sports item purchase system.
+            </li>
+            <li>
+              Implemented secure authentication and admin panel customization.
+            </li>
+          </ul>
+          <div class="project-link">
+            <a href="https://github.com/Dev952/Athletic_Avenue" target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <button class="project-header">
+          <h3>
+            Morphometrics Analysis of the Fracture in Classified Lunar FFCs
+          </h3>
+          <span class="expand-icon">▼</span>
+        </button>
+        <div class="project-content">
+          <ul>
+            <li>
+              <strong>Fracture Measurement:</strong> Analyzed key morphometric
+              parameters (length, width) of fractures in lunar floor-fractured
+              craters (FFCs) using high-resolution imagery and Quickmap tools.
+            </li>
+            <li>
+              <strong>Classification-Based Study:</strong> Studied FFCs grouped
+              into six morphological classes to observe variations in fracture
+              patterns.
+            </li>
+            <li>
+              <strong>Statistical Comparison:</strong> Performed statistical
+              comparisons to identify similarities, differences, and geological
+              implications.
+            </li>
+            <li>
+              <strong>Implication for Lunar Geology:</strong> Interpreted
+              fracture characteristics in relation to subsurface processes like
+              magmatic intrusion and tectonics.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <button class="project-header">
+          <h3>
+            Audio Spleeter Web App (MERN + Next.js + Deep Learning + Whisper AI)
+          </h3>
+          <span class="expand-icon">▼</span>
+        </button>
+        <div class="project-content">
+          <ul>
+            <li>
+              Built a <strong>full-stack web app</strong> using MERN + Next.js
+              for seamless audio processing workflows.
+            </li>
+            <li>
+              Developed a responsive UI using <strong>shadcn/ui</strong> and
+              <strong>Tailwind CSS</strong> for clean and accessible design.
+            </li>
+            <li>
+              Integrated <strong>Spleeter</strong> (Deep Learning) to separate
+              vocals and instrumentals from uploaded MP3/WAV files.
+            </li>
+            <li>
+              Implemented <strong>OpenAI Whisper</strong> for real-time lyrics
+              generation and transcription with synchronized live lyrics
+              display.
+            </li>
+            <li>
+              Designed a secure <strong>Node.js + Express backend</strong> for
+              handling uploads, processing, and UUID-based dynamic storage.
+            </li>
+            <li>
+              Optimized performance using asynchronous processing for large
+              files and scalable multi-user requests.
+            </li>
+            <li>
+              Enhanced engagement with
+              <strong>animated progress indicators</strong> and dynamic download
+              links.
+            </li>
+          </ul>
+          <div class="project-link">
+            <a href="https://github.com/Dev952/Audio-Spleeter" target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem">
+          Bachelor's in Information Technology
+        </h3>
+        <p style="color: var(--text-secondary)">
+          Madhuben & Bhanubhai Patel Institute Of Technology (MBIT), Anand<br />
+          Graduated: 05/2025 | CGPA: 7.17
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="color: var(--accent-color); margin-bottom: 0.5rem">
+          Diploma in Information Technology
+        </h3>
+        <p style="color: var(--text-secondary)">
+          Government Polytechnic, Ahmedabad<br />
+          Graduated: 05/2022 | CGPA: 7.95
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">React</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">TypeScript</div>
+        <div class="skill-item">MongoDB</div>
+        <div class="skill-item">IOT</div>
+        <div class="skill-item">Flutter</div>
+        <div class="skill-item">Express</div>
+        <div class="skill-item">Next.js</div>
+        <div class="skill-item">Python-Django</div>
+        <div class="skill-item">Web Development</div>
+        <div class="skill-item">Data Analysis</div>
+        <div class="skill-item">Research</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h4 style="color: var(--accent-color)">Name</h4>
+          <p>Dev Trivedi</p>
+        </div>
+        <div class="contact-item">
+          <h4 style="color: var(--accent-color)">Phone</h4>
+          <p>+91 9998618039</p>
+        </div>
+        <div class="contact-item">
+          <h4 style="color: var(--accent-color)">Email</h4>
+          <p>devtrivedi13@gmail.com</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/profile.php?id=100004758645181"
+          title="Facebook"
+          >f</a
+        >
+        <a href="https://www.instagram.com/dev952" title="Instagram">🅾</a>
+        <a href="https://x.com/BEYONDI43675586" title="Twitter">𝕏</a>
+        <a
+          href="https://www.linkedin.com/in/dev-trivedi-a8b877250"
+          title="LinkedIn"
+          >in</a
+        >
+        
+        <a
+          href="https://beyondinfinite9502.page.link/BeyondInfinite"
+          title="YouTube"
+          >▶️</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">© 2025 Dev Trivedi. All rights reserved.</div>
+    </footer>
+  </body>
 </html>
